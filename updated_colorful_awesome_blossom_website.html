@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Blossom</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom, #fffcf2, #fff2e5);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #ff7eb3, #ffc952);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #ff5181;
+        }
+
+        header img {
+            max-width: 180px;
+            margin-bottom: 1rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff5181;
+            padding: 0.5rem 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #ffe29d;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #ffc952;
+        }
+        
+        .section h2 {
+            margin-bottom: 1rem;
+            color: #ff5181;
+            text-align: center;
+        }
+        
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 0.5rem;
+            border-radius: 12px;
+            border: 2px solid #ff7eb3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 2px solid #ff5181;
+            border-radius: 8px;
+            background: #fff2e5;
+        }
+        
+        .contact-form button {
+            background: linear-gradient(135deg, #ff7eb3, #ffc952);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .contact-form button:hover {
+            background: linear-gradient(135deg, #ffc952, #ff7eb3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.png" alt="Awesome Blossoms Logo">
+        <h1>Awesome Blossom</h1>
+        <p>Let your garden blossom with our plants</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>At Awesome Blossom, we specialize in vibrant plants and landscaping that breathe life into your spaces. From indoor greenery to outdoor gardens, we bring the joy of nature to you.</p>
+        </section>
+        <section id="gallery" class="section gallery">
+            <h2>Gallery</h2>
+            <div>
+                <img src="https://via.placeholder.com/200" alt="Plant 1">
+                <img src="https://via.placeholder.com/200" alt="Plant 2">
+                <img src="https://via.placeholder.com/200" alt="Plant 3">
+                <img src="https://via.placeholder.com/200" alt="Plant 4">
+            </div>
+        </section>
+        
+    <section id="contact" class="section">
+        <h2>Contact Information</h2>
+        <p>Contact us at:</p>
+        <ul>
+            <li>Phone: 01021523201</li>
+            <li>Phone: 0100511553</li>
+            <li>Phone: 01005238970</li>
+        </ul>
+        <p>We deliver only in Cairo.</p>
+        <button onclick="alert('Message me via the provided contact numbers!')">Message Me</button>
+    
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
